@@ -489,3 +489,4 @@ map.on('moveend', function(e) {
    var zoom = map.getZoom();
    console.log(bounds, zoom);
 });
+$('#dist1').click(function(){window.open('https://schall11.github.io/fish3')});
