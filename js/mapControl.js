@@ -286,12 +286,12 @@ var huc10 = L.esri.featureLayer({
 }).addTo(map);
 
 var picIcon1_first = L.icon({
-    iconUrl: 'https://preview.ibb.co/j7PPdv/Pacificorp_dam_closed.jpg',
-    iconSize:     [467, 350]
+    iconUrl: 'https://preview.ibb.co/hrrGdv/Pacificorp_low_flow_channel_passage_channel_during_low_flows_with_antenna_in_place.jpg',
+    iconSize:     [375, 500]
 });
 var picIcon1_second = L.icon({
-    iconUrl: 'https://preview.ibb.co/m9Ry5a/Pacificorp_dam_open.jpg',
-    iconSize:     [467, 350]
+    iconUrl: 'https://preview.ibb.co/nDrhJv/Pacificorp_channel.jpg',
+    iconSize:     [375, 500]
 });
 var picIcon2 = L.icon({
     iconUrl: 'https://preview.ibb.co/ecGV1F/Cottonwood_Creek_diversion.jpg',

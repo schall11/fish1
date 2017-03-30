@@ -65,17 +65,7 @@ L.TimeDimension.Layer.GeoJson = L.TimeDimension.Layer.extend({
         var layer = L.geoJson(null, this._baseLayer.options);
         // console.log(layer);
         var layers = this._baseLayer.getLayers();
-        var layerNumber1 = 0;
-        var layerNumber2 = 0;
-        var layerNumber3 = 0;
-        var layerNumber4 = 0;
-        var addedLayers = 0;
-        // console.log(layerNumber2);
-        // console.log(addedLayers);
 
-        addedLayers = layerNumber1 + layerNumber2 + layerNumber3+ layerNumber4;
-        var divList = ["dist1","dist2","dist3","dist4","dist5"];
-        // console.log(layers);
         for (var i = 0, l = layers.length; i < l; i++) {
             // console.log(layers);
              // var container = L.DomUtil.create('div');
@@ -98,6 +88,7 @@ L.TimeDimension.Layer.GeoJson = L.TimeDimension.Layer.extend({
                         // console.log(layers[i].feature.properties.name, totalDistance);
                     }
                 }
+             // totalDistance += (L.latLng(feature.geometry.coordinates[0][0], feature.geometry.coordinates[0][1], feature.geometry.coordinates[0][2])).distanceTo(L.latLng(feature.geometry.coordinates[feature.geometry.coordinates.length-1][0], feature.geometry.coordinates[feature.geometry.coordinates.length- 1][1], feature.geometry.coordinates[feature.geometry.coordinates.length - 1][2]))
             }
             // }
             // else{
