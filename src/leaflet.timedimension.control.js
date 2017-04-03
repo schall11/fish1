@@ -131,7 +131,7 @@ L.Control.TimeDimension = L.Control.extend({
         timeSteps: 1,
         autoPlay: false,
         playerOptions: {
-            transitionTime: 1000
+            transitionTime: 4000
         }
     },
 
@@ -187,6 +187,7 @@ L.Control.TimeDimension = L.Control.extend({
         L.DomEvent.disableClickPropagation(container);
 
         return container;
+
     },
     addTo: function() {
         //To be notified AFTER the component was added to the DOM
@@ -500,6 +501,7 @@ L.Control.TimeDimension = L.Control.extend({
 */
         var speedLabel = L.DomUtil.create('span', 'speed', sliderContainer);
         var sliderbar = L.DomUtil.create('div', 'slider', sliderContainer);
+        console.log(Math.round(10000 / (this._player.getTransitionTime())));
         var initialSpeed = Math.round(10000 / (this._player.getTransitionTime() || 1000)) / 10;
         speedLabel.innerHTML = this._getDisplaySpeed(initialSpeed);
 

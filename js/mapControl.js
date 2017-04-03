@@ -21,7 +21,7 @@ map.timeDimension = timeDimension;
 // otherwise you have to set the 'timeDimension' option on all layers.
 
 var player        = new L.TimeDimension.Player({
-    transitionTime: 25, 
+    transitionTime: 100,
     loop: false,
     startOver:true
 }, timeDimension);
@@ -286,11 +286,11 @@ var huc10 = L.esri.featureLayer({
 }).addTo(map);
 
 var picIcon1_first = L.icon({
-    iconUrl: 'https://preview.ibb.co/hrrGdv/Pacificorp_low_flow_channel_passage_channel_during_low_flows_with_antenna_in_place.jpg',
+    iconUrl: 'https://preview.ibb.co/nDrhJv/Pacificorp_channel.jpg',
     iconSize:     [375, 500]
 });
 var picIcon1_second = L.icon({
-    iconUrl: 'https://preview.ibb.co/nDrhJv/Pacificorp_channel.jpg',
+    iconUrl: 'https://preview.ibb.co/hrrGdv/Pacificorp_low_flow_channel_passage_channel_during_low_flows_with_antenna_in_place.jpg',
     iconSize:     [375, 500]
 });
 var picIcon2 = L.icon({
@@ -455,6 +455,7 @@ gpxTimeLayerFish5.on('remove', function(){
 });
 gpxTimeLayerFish1.on('add', function(){
     $('#dist1').show();
+
 });
 gpxTimeLayerFish1.on('remove', function(){
     $('#dist1').hide();
@@ -490,3 +491,4 @@ map.on('moveend', function(e) {
    console.log(bounds, zoom);
 });
 $('#dist1').click(function(){window.open('https://schall11.github.io/fish3')});
+
